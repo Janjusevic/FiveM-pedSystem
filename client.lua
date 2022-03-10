@@ -28,9 +28,9 @@ AddEventHandler("janjusevic_pedsystem:loadujSkin", function()
 end)
 
 AddEventHandler('esx:onPlayerSpawn', function()
-	spawnovan = true 
+spawnovan = true 
 	if spawnovan then 
-    Citizen.Wait(5000)
+    	Citizen.Wait(5000)
 		TriggerServerEvent("janjusevic_pedsystem:proveriPeda", PlayerPedId()) 
 	else
 		--print('a')
